@@ -1,0 +1,6 @@
+tensorflow==2.6.0
+keras-tuner
+
+# for m1-chip and arm installation of python
+# tensorflow-macos==2.6.0
+# tensorflow-metal==2.6.0
