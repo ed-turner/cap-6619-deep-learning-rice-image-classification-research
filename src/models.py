@@ -12,7 +12,8 @@ def build_fcn_model(hp):
 
     model = tf.keras.Sequential(
         [
-            tf.keras.Input(shape=(28, 28))
+            tf.keras.layers.Resizing(28, 28),
+            tf.keras.layers.Rescaling(1. / 255)
         ]
     )
 
@@ -50,7 +51,8 @@ def build_cnn_model(hp):
 
     model = tf.keras.Sequential(
         [
-            tf.keras.Input(shape=(28, 28))
+            tf.keras.layers.Resizing(28, 28),
+            tf.keras.layers.Rescaling(1. / 255)
         ]
     )
 
